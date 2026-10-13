@@ -1,0 +1,30 @@
+{
+    "name": "@vanillatyme/mc-items",
+    "version": "26.3.0",
+    "description": "Item IDs, English names and icons for the Vanilla Tyme shop site",
+    "license": "SEE LICENSE IN LICENSE",
+    "type": "module",
+        "main": "./index.ts",
+        "types": "./index.ts",
+        "exports": {
+            ".": {
+                "types": "./index.ts",
+                "default": "./index.ts"
+            },
+            "./icons/*": "./icons/*"
+        },
+        "files": [
+            "index.ts",
+            "items.ts",
+            "icons",
+            "NOTICE.md"
+        ],
+    "scripts": {
+        "generate": "node scripts/generate.ts",
+        "typecheck": "tsc"
+    },
+    "devDependencies": {
+        "@types/node": "^24",
+        "typescript": "^5.9.3"
+    }
+}
